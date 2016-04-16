@@ -1,0 +1,35 @@
+HTTP/1.1 200 OK
+Server: gSOAP/2.8
+Content-Type: application/soap+xml; charset=utf-8; action="http://www.onvif.org/ver10/device/wsdl/GetNetworkInterfaces"
+Content-Length: 3356
+Connection: close
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope" xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsdd="http://schemas.xmlsoap.org/ws/2005/04/discovery" xmlns:chan="http://schemas.microsoft.com/ws/2005/02/duplex" xmlns:wsa5="http://www.w3.org/2005/08/addressing" xmlns:xmime="http://tempuri.org/xmime.xsd" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:wsrfbf="http://docs.oasis-open.org/wsrf/bf-2" xmlns:wstop="http://docs.oasis-open.org/wsn/t-1" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:wsrfr="http://docs.oasis-open.org/wsrf/r-2" xmlns:tad="http://www.onvif.org/ver10/analyticsdevice/wsdl" xmlns:tan="http://www.onvif.org/ver20/analytics/wsdl" xmlns:tdn="http://www.onvif.org/ver10/network/wsdl" xmlns:tds="http://www.onvif.org/ver10/device/wsdl" xmlns:tev="http://www.onvif.org/ver10/events/wsdl" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:timg="http://www.onvif.org/ver20/imaging/wsdl" xmlns:tls="http://www.onvif.org/ver10/display/wsdl" xmlns:tmd="http://www.onvif.org/ver10/deviceIO/wsdl" xmlns:tptz="http://www.onvif.org/ver20/ptz/wsdl" xmlns:trc="http://www.onvif.org/ver10/recording/wsdl" xmlns:trp="http://www.onvif.org/ver10/replay/wsdl" xmlns:trt="http://www.onvif.org/ver10/media/wsdl" xmlns:trv="http://www.onvif.org/ver10/receiver/wsdl" xmlns:tse="http://www.onvif.org/ver10/search/wsdl" xmlns:tnsn="http://www.onvif.org/ver10/topics" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:extwsd="http://www.onvifext.com/onvif/ext/ver10/wsdl" xmlns:extxsd="http://www.onvifext.com/onvif/ext/ver10/schema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http" xmlns:dn="http://www.onvif.org/ver10/network/wsdl" xmlns:tst="http://www.onvif.org/ver10/storage/wsdl" xmlns:ter="http://www.onvif.org/ver10/error" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12" xmlns:d="http://schemas.xmlsoap.org/ws/2005/04/discovery" xmlns:wsadis="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsntw="http://docs.oasis-open.org/wsn/bw-2" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsrf-bf="http://docs.oasis-open.org/wsrf/bf-2" xmlns:wsrf-rw="http://docs.oasis-open.org/wsrf/rw-2" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:tet="http://www.onvif.org/ver10/events/wsdl" xmlns:tns1="http://www.onvif.org/ver10/topics">
+
+<SOAP-ENV:Header></SOAP-ENV:Header>
+
+<SOAP-ENV:Body>
+<tds:GetNetworkInterfacesResponse>
+<tds:NetworkInterfaces token="eth0">
+<tt:Enabled>true</tt:Enabled>
+<tt:Info>
+<tt:Name>eth0</tt:Name>
+<tt:HwAddress>58:FC:DB:70:00:08</tt:HwAddress>
+<tt:MTU>1500</tt:MTU>
+</tt:Info>
+<tt:IPv4>
+<tt:Enabled>true</tt:Enabled>
+<tt:Config>
+<tt:Manual><tt:Address>192.168.1.201</tt:Address>
+<tt:PrefixLength>24</tt:PrefixLength></tt:Manual>
+<tt:FromDHCP>
+<tt:Address>192.168.1.201</tt:Address>
+<tt:PrefixLength>24</tt:PrefixLength>
+</tt:FromDHCP>
+<tt:DHCP>false</tt:DHCP>
+</tt:Config>
+</tt:IPv4>
+</tds:NetworkInterfaces>
+</tds:GetNetworkInterfacesResponse>
+</SOAP-ENV:Body></SOAP-ENV:Envelope>
